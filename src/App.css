@@ -79,12 +79,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -98,36 +98,36 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: "";
-    content: none;
+  content: "";
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .quiz-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .quiz-container li {
@@ -137,66 +137,59 @@ table {
 }
 
 .quiz-container p {
-    margin: 1rem auto;
+  margin: 1rem auto;
 }
 
 .quiz-question {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .quiz-container li:not(:last-child) {
-    border-bottom: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .quiz-wrapper {
-    margin-top: 200px;
-    width: 600px;
-    border: 1px solid gray;
+  margin-top: 200px;
+  width: 600px;
+  border: 1px solid black;
 }
 
 button {
-    margin-top: 1rem;
-    width: 100px;
-    height: 50px;
-    color: indigo;
-    background-color: white;
-    outline: none;
-    border: 3px solid indigo;
-    cursor: pointer;
+  margin-top: 1rem;
+  width: 100px;
+  height: 50px;
+  color: indigo;
+  background-color: white;
+  outline: none;
+  border: 3px solid indigo;
+  cursor: pointer;
 }
 
 .selected {
-    height: 2rem;
-    line-height: 3rem;
+  height: 2rem;
+  line-height: 3rem;
 }
 
 .selected:hover {
-    cursor: pointer;
-    background-color: lightblue;
+  cursor: pointer;
+  background-color: lightblue;
 }
-
 
 .notselected {
-    height: 2rem;
-    line-height: 2rem;
+  height: 2rem;
+  line-height: 2rem;
 }
 
-
 .item {
-    height: 3rem;
+  height: 3rem;
 }
 
 .button-wrapper {
-    width: 600px;
-    text-align: right;
+  width: 600px;
+  text-align: right;
 }
 
 .piechart {
-    margin-top: 200px;
-    width: 400px;
+  margin-top: 200px;
+  width: 400px;
 }
-
-
-
-
-
