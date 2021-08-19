@@ -151,7 +151,7 @@ table {
 .quiz-wrapper {
   margin-top: 200px;
   width: 600px;
-  border: 1px solid lightgray;
+  border: 1px solid gray;
 }
 
 button {
@@ -161,7 +161,7 @@ button {
   color: indigo;
   background-color: white;
   outline: none;
-  border: 3px solid indigo;
+  border: 3px solid blue;
   cursor: pointer;
 }
 
