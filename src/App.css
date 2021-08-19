@@ -151,7 +151,7 @@ table {
 .quiz-wrapper {
   margin-top: 200px;
   width: 600px;
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 button {
