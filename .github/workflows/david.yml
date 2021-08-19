@@ -10,27 +10,29 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build_test:
-    # The type of runner that the job will run on
+  build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x]
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: Clone repository
+        uses: actions/checkout@v2
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm ci, build and test
-        run: |
-          npm ci
-          npm run build --if-present
-          npm test      
+          node-version: 12.x
+      - name: Install dependencies
+        run: npm install    
+      - name: Test
+        run: npm test
+        env:
+          CI: true
+      - name: Generate build
+        run: npm run build
+      # Share artifact inside workflow
+      - name: Share artifact inside workflow
+        uses: actions/upload-artifact@v1
+        with:
+          name: react-github-actions-build
+          path: build   
       - name: Build and Push Docker Image
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
